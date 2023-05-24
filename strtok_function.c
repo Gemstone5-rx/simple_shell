@@ -13,7 +13,7 @@ char *_strtok(char *str, const char *delimiters)
 	static char *next_token;
 	char *token_start;
 	int token_len = 0, i;
-	int delim_len = strlen(delimiters);
+	int delim_len = _strlen(delimiters);
 
 	if (str != NULL)
 	{

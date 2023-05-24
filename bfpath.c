@@ -18,9 +18,9 @@ char *build_full_path(const char *dir, const char *command)
 		exit(EXIT_FAILURE);
 	}
 
-	strcpy(full_path, dir);
-	strcat(full_path, "/");
-	strcat(full_path, command);
+	_strcpy(full_path, dir);
+	_strcat(full_path, "/");
+	_strcat(full_path, command);
 
 	return (full_path);
 }

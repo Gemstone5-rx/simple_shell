@@ -1,20 +1,20 @@
 #include "shell.h"
-
 /**
- * _strcpy - Function that copies the string pointed to by src
- * @dest: First pointer to char
- * @src: Second pointer to char
- * Return: pointer to dest
+ * _strcpy - Copy a string
+ * @dest: Destination buffer
+ * @src: Source string
+ *
+ * Return: Pointer to the destination string
  */
-char *_strcpy(char *dest, char *src)
+char *_strcpy(char *dest, const char *src)
 {
-	int i;
+	char *ptr = dest;
 
-	for (i = 0; *(src + i) != '\0'; i++)
-	{
-		dest[i] = *(src + i);
-	}
-	dest[i] = '\0';
+	while (*src)
+		*ptr++ = *src++;
 
-	return (dest);
+	*ptr = '\0';
+
+	return dest;
 }
+

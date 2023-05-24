@@ -28,7 +28,7 @@ char *search_in_path(const char *command)
 
 	if (!found)
 	{
-		printf("%s: command not found\n", command);
+		perror("error");
 		free(full_path);
 		full_path = NULL;
 	}

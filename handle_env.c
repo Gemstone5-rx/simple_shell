@@ -12,7 +12,7 @@ void handle_env(void)
 
 	while (*env != NULL)
 	{
-		printf("%s\n", *env);
+		perror("error");
 		env++;
 	}
 }

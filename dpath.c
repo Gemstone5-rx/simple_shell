@@ -21,7 +21,7 @@ char *get_direct_path(const char *command)
 	}
 	else
 	{
-		printf("%s: command not found\n", command);
+		perror("error");
 	}
 
 	return (full_path);

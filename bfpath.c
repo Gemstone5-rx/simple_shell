@@ -10,7 +10,7 @@
  */
 char *build_full_path(const char *dir, const char *command)
 {
-	char *full_path = malloc(strlen(dir) + strlen(command) + 2);
+	char *full_path = malloc(_strlen(dir) + _strlen(command) + 2);
 
 	if (!full_path)
 	{

@@ -25,6 +25,7 @@ char *_strcpy(char *dest, const char *src);
 char *_strcat(char *dest, const char *src);
 int _strncmp(const char *s1, const char *s2, size_t n);
 size_t _strlen(const char *str);
+int _strcmp(const char *s1, const char *s2);
 void exit_shell(int status);
 
 /*Execute Command*/

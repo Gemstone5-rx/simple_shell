@@ -35,12 +35,12 @@ void run_shell(void)
 
 		if (args[0] != NULL)
 		{
-			if (strcmp(args[0], "exit") == 0)
+			if (_strcmp(args[0], "exit") == 0)
 			{
 				free(line);
 				exit(EXIT_SUCCESS);
 			}
-			else if (strcmp(args[0], "env") == 0)
+			else if (_strcmp(args[0], "env") == 0)
 				handle_env();
 			execute_command(args[0], args);
 		}

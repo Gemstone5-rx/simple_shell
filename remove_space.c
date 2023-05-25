@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * removeLeadingSpaces - remove the leading space.
+ * remove_spaces - remove the leading space.
  * @str: the string.
  * Return: void.
  */

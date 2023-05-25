@@ -3,7 +3,7 @@
 /**
  * _memcpy - function that copies a block of memory.
  * @destination: the place to be copied  to.
- * @source: the place to copy from.
+ * @src: the place to copy from.
  * @number_of_bytes: number of bytes.
  * Return: void.
  */
